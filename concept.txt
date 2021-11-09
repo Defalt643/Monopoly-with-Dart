@@ -1,0 +1,126 @@
+					Monopoly
+----------------------------------
+| + |   |   |   |   |   |   | O |
+----------------------------------
+|   |                 	    |   |
+|   |                       |   |	   
+|   |                       |   |	   Player vs Player
+| X |-----------------------| X |
+|   |                       |   |	   |   | Name Position Upgrade Multipy
+|   |                       |   |	   | X | Random Power card
+|   |                       |   |	   | - | Jail Stop for 3 turn
+----------------------------------	   | + | Can move to any position
+| - |   |   |   |   |   |   | + |	   | O | Can build in any position but it's non occupied by other player
+----------------------------------
+
+| X | contains 5 cards.
+                            Board Example
+| PropertyName | PropertyName | PropertyName | PropertyName | PropertyName | PropertyName | PropertyName | PropertyName |
+|              | currentLevel | currentLevel | currentLevel | currentLevel | currentLevel | currentLevel |              |
+|              | PlayerName   | PlayerName   | PlayerName   | PlayerName   | PlayerName   | PlayerName   |              |
+----------------                                                                                         ----------------
+| PropertyName |                                                                                         | PropertyName |
+| currentLevel |                                                                                         | currentLevel |
+| PlayerName   |                                                                                         | PlayerName   |
+----------------                                                                                         ----------------
+| PropertyName |                                                                                         | PropertyName |
+| currentLevel |                                                                                         | currentLevel |
+| PlayerName   |                                                                                         | PlayerName   |
+----------------                                                                                         ----------------
+| PropertyName |                                                                                         | PropertyName |
+| currentLevel |                                                                                         | currentLevel |
+| PlayerName   |                                                                                         | PlayerName   |
+----------------                                                                                         ----------------
+| PropertyName |                                                                                         | PropertyName |
+|              |                                                                                         |              |
+|              |                                                                                         |              |
+----------------                                                                                         ----------------
+| PropertyName |                                                                                         | PropertyName |
+| currentLevel |                                                                                         | currentLevel |
+| PlayerName   |                                                                                         | PlayerName   |
+----------------                                                                                         ----------------
+| PropertyName |                                                                                         | PropertyName |
+| currentLevel |                                                                                         | currentLevel |
+| PlayerName   |                                                                                         | PlayerName   |
+----------------                                                                                         ----------------
+| PropertyName |                                                                                         | PropertyName |
+| currentLevel |                                                                                         | currentLevel |
+| PlayerName   |                                                                                         | PlayerName   |
+----------------                                                                                         ----------------
+| PropertyName | PropertyName | PropertyName | PropertyName | PropertyName | PropertyName | PropertyName | PropertyName |
+|              | currentLevel | currentLevel | currentLevel | currentLevel | currentLevel | currentLevel | 2M Salary    |
+|              | PlayerName   | PlayerName   | PlayerName   | PlayerName   | PlayerName   | PlayerName   |              |
+
+| PropertyName |
+| currentLevel |
+| currentPlayer|
+|    Owner     |
+|    price     |
+
+
+TEST travel
+traget from 15 to 14
+equalation f(x)=(lenght - current position) + traget 
+	       =(30-15)+14
+middle = (totalSpace - totalText) /2 .round()
+
+
+\n1.From start both player will receive 10M dollar
+\n2.If player below than 0 another player will win!
+\n3.you can buy any property if you have enough money
+\n4.you can takeover property from another player if your money have more than property price *1.5
+\n5.This game have 30 slot contains [Start Point , Property , Powercard , JAIL , FREE GO ANYWHERE ,GOTO JAIL]
+\n6.If you move to Powercard slot or move to slot 12 or 27 you will receive a random powercard(5 powercard in deck)
+\n7.If you move to Jail or move to slot 8 you will be jail for 3 turns (Stop playing for 3 turns)
+\n8.If you move to Free Go Anywhere or move to slot 16 you will go to anywhere in this game as you want!
+\n9.If you move to Goto Jail or slot 23 you will move to jail and will be jail for 3 turns(Stop playing for 3 turns)
+
+
+AsciiArt = 714 lines
+Board = 88 lines
+Game = 116 lines
+Monopoly = 6 lines
+Operator = 447 lines
+Player = 93 lines
+Powercard = 59 lines
+
+714 + 88 + 116 + 447 + 6 + 93 + 59 = 1,523 lines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ___      ___     ______    _____  ___      ______    _______    ______    ___       ___  ___  
+|"  \    /"  |   /    " \  (\"   \|"  \    /    " \  |   __ "\  /    " \  |"  |     |"  \/"  | 
+ \   \  //   |  // ____  \ |.\\   \    |  // ____  \ (. |__) :)// ____  \ ||  |      \   \  /  
+ /\\  \/.    | /  /    ) :)|: \.   \\  | /  /    ) :)|:  ____//  /    ) :)|:  |       \\  \/   
+|: \.        |(: (____/ // |.  \    \. |(: (____/ // (|  /   (: (____/ //  \  |___    /   /    
+|.  \    /:  | \        /  |    \    \ | \        / /|__/ \   \        /  ( \_|:  \  /   /     
+|___|\__/|___|  \"_____/    \___|\____\)  \"_____/ (_______)   \"_____/    \_______)|___/      
+                                                                                               
+
+
+ _____ ______    ________   ________    ________   ________   ________   ___            ___    ___ 
+|\   _ \  _   \ |\   __  \ |\   ___  \ |\   __  \ |\   __  \ |\   __  \ |\  \          |\  \  /  /|
+\ \  \\\__\ \  \\ \  \|\  \\ \  \\ \  \\ \  \|\  \\ \  \|\  \\ \  \|\  \\ \  \         \ \  \/  / /
+ \ \  \\|__| \  \\ \  \\\  \\ \  \\ \  \\ \  \\\  \\ \   ____\\ \  \\\  \\ \  \         \ \    / / 
+  \ \  \    \ \  \\ \  \\\  \\ \  \\ \  \\ \  \\\  \\ \  \___| \ \  \\\  \\ \  \____     \/  /  /  
+   \ \__\    \ \__\\ \_______\\ \__\\ \__\\ \_______\\ \__\     \ \_______\\ \_______\ __/  / /    
+    \|__|     \|__| \|_______| \|__| \|__| \|_______| \|__|      \|_______| \|_______||\___/ /     
+                                                                                      \|___|/      
+                                                                                                   
+                                                                                                   
